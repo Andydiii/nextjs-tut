@@ -1,7 +1,12 @@
 import React from 'react'
 
-export default function page() {
+// static metadata 
+export const metadata = {
+  title: "About Andy Liu",
+};
+
+export default function about() {
   return (
-    <div>page</div>
+    <div>About Me</div>
   )
 }
