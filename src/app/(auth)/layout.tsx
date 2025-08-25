@@ -11,6 +11,8 @@ const navLinks = [
   { name: "Forgot Password", href: "/forgot-password" },
 ];
 
+// if we want to use params/searchParams: if its a client side component which does not support async function and await, then we cannot use params/searchParams directly, but need to use "use" hook and remove async keywrod and await keywords, use it in this way: use(params), use(searchParams)
+// in client side component we can use usePathname hook directly to get the whole path.
 export default function AuthLayout({
   children,
 }: {
