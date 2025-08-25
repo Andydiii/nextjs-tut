@@ -7,8 +7,15 @@ export default function Home() {
     <>
       <h1>Welcome Home!</h1>
       <Link href="/blog">Blog</Link>
+      <br />
       <Link href="products">Products</Link>
-      
+      <br />
+      {/* 
+        breaking-news-123 is the dynamic route parameter, and lang=en is the query parameter
+      */}
+      <Link href="/articles/breaking-news-123?lang=en">Read in English</Link>
+      <br />
+      <Link href="/articles/breaking-news-123?lang=fr">Read in French</Link>
     </>
   );
 }
