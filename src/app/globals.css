@@ -1,1 +1,8 @@
 @import "tailwindcss"; 
+
+/* in `src/app/globals.css` after the @tailwind directives */
+.revert-button {
+    all: revert;
+    /* optional: keep consistent text sizing if you prefer Tailwind’s font sizing */
+    /* font: inherit; */
+  }
