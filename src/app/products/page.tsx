@@ -16,8 +16,7 @@ export default function ProductList() {
         <Link href="/products/2">Product 2</Link>
       </h2>
 
-      {/* replace: it overrides the current visiting history, and next hit back will be back to home page 
-        with it, when we click Product 3 and we redirect to product 3 details page, hit back, 
+      {/* replace: it overrides the current visiting history, and next hit-back will take us to home page. when we click Product 3 and we redirect to product 3 details page, hit back, 
         it wont go back to last visited page but go back to home page directly*/}
       <h2>
         <Link href="/products/2" replace>
